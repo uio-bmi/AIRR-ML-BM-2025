@@ -1,0 +1,154 @@
+definitions:
+  motifs:
+    pwm_1:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/YT_R_.jaspar
+      threshold: 2
+    pwm_10:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/WLYS.jaspar
+      threshold: 2
+    pwm_2:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/D_Q_P.jaspar
+      threshold: 2
+    pwm_3:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/_T_W_N.jaspar
+      threshold: 2
+    pwm_4:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/Q_D_V_.jaspar
+      threshold: 2
+    pwm_5:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/GE__FE.jaspar
+      threshold: 2
+    pwm_6:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/T_N_DN.jaspar
+      threshold: 2
+    pwm_7:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/YL_L.jaspar
+      threshold: 2
+    pwm_8:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/C_RS.jaspar
+      threshold: 2
+    pwm_9:
+      file_path: /doctorai/skanduri/second_phase_data_July2024/realtive_freq_files/pwm_files/DFVN.jaspar
+      threshold: 2
+  signals:
+    signal1:
+      motifs:
+      - pwm_1
+      - pwm_2
+    signal2:
+      motifs:
+      - pwm_3
+      - pwm_4
+    signal3:
+      motifs:
+      - pwm_5
+      - pwm_6
+    signal4:
+      motifs:
+      - pwm_7
+      - pwm_8
+    signal5:
+      motifs:
+      - pwm_9
+      - pwm_10
+  simulations:
+    sim1:
+      is_repertoire: true
+      paired: false
+      sequence_type: amino_acid
+      sim_items:
+        AIRR1:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: true
+          is_noise: false
+          number_of_examples: 80
+          receptors_in_repertoire_count: 25000
+          seed: 694
+          signals:
+            signal1: 0.004
+        AIRR2:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: true
+          is_noise: false
+          number_of_examples: 80
+          receptors_in_repertoire_count: 25000
+          seed: 309
+          signals:
+            signal2: 0.004
+        AIRR3:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: true
+          is_noise: false
+          number_of_examples: 80
+          receptors_in_repertoire_count: 25000
+          seed: 17
+          signals:
+            signal3: 0.004
+        AIRR4:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: true
+          is_noise: false
+          number_of_examples: 80
+          receptors_in_repertoire_count: 25000
+          seed: 529
+          signals:
+            signal4: 0.004
+        AIRR5:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: true
+          is_noise: false
+          number_of_examples: 80
+          receptors_in_repertoire_count: 25000
+          seed: 133
+          signals:
+            signal5: 0.004
+        AIRR6:
+          generative_model:
+            chain: beta
+            default_model_name: humanTRB
+            model_path: null
+            type: OLGA
+          immune_events:
+            label_positive: false
+          is_noise: false
+          number_of_examples: 400
+          receptors_in_repertoire_count: 25000
+          seed: 1
+          signals:
+            signal5: 0
+      simulation_strategy: RejectionSampling
+instructions:
+  inst1:
+    export_p_gens: false
+    max_iterations: 10000
+    number_of_processes: 80
+    sequence_batch_size: 1000000
+    simulation: sim1
+    type: LigoSim
+output:
+  format: HTML

@@ -1,0 +1,67 @@
+mode: "signal_implantation"
+olga_model: "humanTRB"
+n_repertoires: 800
+n_sequences: ""
+n_threads: 80
+noise_rate: 0.2
+output_path: ""
+seed: ""
+signal_sequences_file: ""
+signal_pgen_count_mapping_file: ""
+phenotype_burden: ""
+phenotype_pool_size: ""
+allow_closer_phenotype_burden: True
+store_intermediate_files: False
+export_nt: False
+background_sequences_path: "/path/to/concatenated_covid_repertoires.tsv"
+usecase_name: "q3_fullseq"
+super_path: "/path/to/q3_fullseq_data"
+reps: 
+  run1:
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep1_part1.tsv"
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep3_part1.tsv"
+    n_sequences:
+      - 12000
+      - 6000
+    phenotype_burden:
+      - 10
+      - 5
+    phenotype_pool_size:
+      - 330
+      - 175
+    signal_pgen_count_mapping_file:
+      - "/path/to/signal_mapping_burden_20.tsv"
+      - "/path/to/signal_mapping_burden_20.tsv"
+  run2: 
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep1_part2.tsv"
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep3_part2.tsv"
+    n_sequences:
+      - 12000
+      - 6000
+    phenotype_burden:
+      - 10
+      - 5
+    phenotype_pool_size:
+      - 330
+      - 175
+    signal_pgen_count_mapping_file:
+      - "/path/to/signal_mapping_burden_20.tsv"
+      - "/path/to/signal_mapping_burden_20.tsv"
+  run3:
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep1_part3.tsv"
+      - "/path/to/vdjdb_downloaded/influenza_a_23072024_rep3_part3.tsv"
+    n_sequences:
+      - 12000
+      - 6000
+    phenotype_burden:
+      - 10
+      - 5
+    phenotype_pool_size:
+      - 330
+      - 175
+    signal_pgen_count_mapping_file:
+      - "/path/to/signal_mapping_burden_20.tsv"
+      - "/path/to/signal_mapping_burden_20.tsv"

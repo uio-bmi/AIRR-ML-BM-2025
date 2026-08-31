@@ -1,0 +1,40 @@
+mode: "signal_implantation"
+olga_model: "humanTRB"
+n_repertoires: 800
+n_sequences: 25000
+n_threads: 80
+noise_rate: 0.2
+output_path: ""
+seed: ""
+signal_sequences_file: ""
+signal_pgen_count_mapping_file: "/path/to/signal_mapping_burden_20.tsv"
+phenotype_burden: 20
+phenotype_pool_size: 650
+allow_closer_phenotype_burden: True
+store_intermediate_files: False
+export_nt: False
+background_sequences_path: "/path/to/concatenated_covid_repertoires.tsv"
+usecase_name: "q5_fullseq"
+super_path: "/path/to/q5_fullseq_data"
+reps: 
+  run1:
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part1_subpart1.tsv"
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part2_subpart1.tsv"
+    positive_label_rate:
+      - 0.35
+      - 0.65
+  run2: 
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part1_subpart2.tsv"
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part2_subpart2.tsv"
+    positive_label_rate:
+      - 0.35
+      - 0.65
+  run3:
+    signal_sequences_file: 
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part1_subpart3.tsv"
+      - "/path/to/vdjdb_downloaded/cmv_23072024_part2_subpart3.tsv"
+    positive_label_rate:
+      - 0.35
+      - 0.65

@@ -1,0 +1,16 @@
+allow_closer_phenotype_burden: true
+background_sequences_path: /doctorai/skanduri/ImmuneCODE-Review-002/concatenated_covid_repertoires_genenames_replaced.tsv
+export_nt: false
+mode: signal_implantation
+n_repertoires: 800
+n_sequences: 25000
+n_threads: 80
+noise_rate: 0.2
+olga_model: humanTRB
+output_path: /doctorai/skanduri/second_phase_data_July2024/q1_fullseq_data/q1_fullseq/run2/phenotype_burden_20/data
+phenotype_burden: 20
+phenotype_pool_size: 650
+seed: 531
+signal_pgen_count_mapping_file: /doctorai/skanduri/second_phase_data_July2024/signal_seq_pgen_count_map_burden_20.tsv
+signal_sequences_file: /doctorai/skanduri/second_phase_data_July2024/vdjdb_downloaded/influenza_a_23072024_part2.tsv
+store_intermediate_files: false

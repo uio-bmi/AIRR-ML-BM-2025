@@ -1,0 +1,34 @@
+burden_and_pools:
+  - !!python/tuple [5, 500]
+  - !!python/tuple [20, 680]
+mode: "signal_implantation"
+olga_model: "humanTRB"
+n_repertoires: 400
+n_sequences: 25000
+n_threads: 120
+noise_rate: 0.2
+output_path: ""
+seed: ""
+signal_sequences_file: ""
+signal_pgen_count_mapping_file: ""
+phenotype_burden: ""
+phenotype_pool_size: ""
+allow_closer_phenotype_burden: True
+store_intermediate_files: False
+export_nt: False
+background_sequences_path: "/path/to/concatenated_covid_repertoires.tsv"
+usecase_name: "q4_fullseq_test"
+super_path: "/path/to/q4_fullseq_data"
+signal_file:
+  5: 
+    run1: "/path/to/vdjdb_downloaded/q4_burden_20_run1_ebv.tsv"
+    run2: "/path/to/vdjdb_downloaded/q4_burden_20_run2_ebv.tsv"
+    run3: "/path/to/vdjdb_downloaded/q4_burden_20_run3_ebv.tsv"
+  20: 
+    run1: "/path/to/vdjdb_downloaded/q4_burden_40_run1_ebv.tsv"
+    run2: "/path/to/vdjdb_downloaded/q4_burden_40_run2_ebv.tsv"
+    run3: "/path/to/vdjdb_downloaded/q4_burden_40_run3_ebv.tsv"
+signal_mapping_file:
+  5: "/path/to/signal_mapping_burden_5.tsv"
+  20: "/path/to/signal_mapping_burden_20.tsv"
+reps: ["run1", "run2", "run3"]

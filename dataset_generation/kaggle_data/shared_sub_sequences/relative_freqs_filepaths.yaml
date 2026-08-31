@@ -1,0 +1,17 @@
+files_path: /path/to/relative_freq_files
+freq_files:
+  pwm_1: gap_pos_2_4_5mers_avg_freqs.csv
+  pwm_2: gap_pos_1_3_5mers_avg_freqs.csv
+  pwm_3: gap_pos_0_2_4_6mers_avg_freqs.csv
+  pwm_4: gap_pos_1_3_5_6mers_avg_freqs.csv
+  pwm_5: gap_pos_2_3_6mers_avg_freqs.csv
+  pwm_6: gap_pos_1_3_6mers_avg_freqs.csv
+  pwm_7: gap_pos_2_4mers_avg_freqs.csv
+  pwm_8: gap_pos_1_4mers_avg_freqs.csv
+  pwm_9: no_gaps_4mers_freqs_sum_freqs.csv
+  pwm_10: no_gaps_4mers_freqs_sum_freqs.csv
+reps: ["run1"]
+usecase_name: "kaggle_shared_sequence_patterns"
+super_path: "/path/to/kaggle_shared_sequence_patterns_data"
+ligo_yaml_file: /path/to/kaggle_shared_sequence_patterns.yaml
+witness_rates: [0.0002, 0.0008, 0.004]
